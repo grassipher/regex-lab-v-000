@@ -54,7 +54,7 @@ describe "Working with Regular expressions" do
       expect(first_word_capitalized_and_ends_with_punctuation?(incorrect_punctuation)).to eq(false)
     end
     it "Returns false for text starting without a capital letter and ending without puncutation" do
-      incorrect_punctuation = "when fish are in schools, they sometimes take debate"
+      incorrect_punctuation = "when fish are in schools, they sometimes take debate
 "
       expect(first_word_capitalized_and_ends_with_punctuation?(incorrect_punctuation)).to eq(false)
     end
