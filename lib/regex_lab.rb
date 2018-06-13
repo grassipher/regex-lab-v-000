@@ -23,7 +23,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  if phone.scan(/[0-9]/).length == 0 
+  if phone.scan(/[\d()-]/).length == 0 
     return false
   else
     return true
